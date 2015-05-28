@@ -1,4 +1,4 @@
-# Conceptos de Git
+# Git
 
 - Sistema de control de versiones creado por Linus Torvalds.
 
@@ -13,6 +13,6 @@ o conjunto de archivos a lo largo del tiempo.
 
 # Branch
 
-- Useful for 'book ended' actions
-- Simple exception handling
-- Built-in for File objects, etc. in 2.7
+- es como colocar tu codigo en una carpeta
+- Aisla el codigo que estas modificando para que no malogres lo del RESTO
+- Que es una rama Vip?

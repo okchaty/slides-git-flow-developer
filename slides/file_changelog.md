@@ -13,18 +13,25 @@
 
 ------------------------------------------------------
 
-# Ejemplos
+# Links
 
-- [ruby changelog](https://github.com/ruby/ruby/blob/trunk/ChangeLog)
-- [ruby changelog](https://github.com/ruby/ruby/blob/trunk/ChangeLog)
-
-- Que es?
-- Ejemplos
-- Standard que usamos.
-
-------------------------------------------------------
-
-# Standard que usamos
+- [ruby](https://github.com/ruby/ruby/blob/trunk/ChangeLog)
+- [gitflow](https://github.com/nvie/gitflow/blob/develop/Changes.mdown)
 
 
 ------------------------------------------------------
+
+# El Que Usamos
+
+    !python
+
+    ### v1.1.9 Titulo de Sprint (DATE)
+
+    - Issue Link Titulo
+    - Issue Link Titulo
+
+    ### v1.1.8 titulo de sprint (DATE)
+
+    - Issue Link Titulo
+    - Issue Link Titulo
+

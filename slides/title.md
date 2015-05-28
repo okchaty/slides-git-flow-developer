@@ -5,11 +5,7 @@
 - Conceptos de Git.
 - Hooks de Git.
 - Que es un Flujo de Trabajo.
-- Que es Git Flow.
-- Instalacion.
-- Feature.
-- Release.
-- HotFix.
-- CHANGELOG.
+- Git Flow.
 - Ejemplo de Uso.
+- CHANGELOG.
 - Referencias.

@@ -1,11 +1,10 @@
 #Luis Mayta
 
-- Lead Development [Pimienta Digital](http://www.pimientadigital.com)
+- Software Developer
 - Go enthusiast
 - Python enthusiast
 
 ## Contactos:
 
--  *twitter* *@slovacus*
--  *github* https://github.com/luismayta
--  *linkedin* @slovacus
+- [@slovacus](https://twitter.com/slovacus)
+- [github.com/luismayta](https://github.com/luismayta)
