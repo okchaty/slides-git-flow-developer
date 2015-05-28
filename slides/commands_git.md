@@ -1,4 +1,4 @@
-# Comoandos de Git
+# Comandos de Git
 
 ## Gist
 
