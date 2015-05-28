@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+pyenv virtualenv flow-git-2.7.9
+
+pyenv activate flow-git-2.7.9
+
+pip install -r requirements.txt
