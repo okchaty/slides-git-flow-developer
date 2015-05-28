@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Git Flow For Developments</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" media="print" href="ribbon/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="ribbon/css/screen.css">
+    
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="../../../.pyenv/versions/landslide-2.7.9/lib/python2.7/site-packages/landslide/themes/default/js/slides.js"></script>
+    
+    
+    <!-- /Javascripts -->
+</head>
+<body class="list">
+    
+      <!-- slide source: title.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Git Flow For Developments</h1></header>
+                
+                
+                    <section class="slide-content"><h1>Agenda</h1>
+<ul>
+<li>Conceptos de Git.</li>
+<li>Hooks de Git.</li>
+<li>Que es un Flujo de Trabajo.</li>
+<li>Que es Git Flow.</li>
+<li>Instalacion.</li>
+<li>Feature.</li>
+<li>Release.</li>
+<li>HotFix.</li>
+<li>CHANGELOG.</li>
+<li>Ejemplo de Uso.</li>
+<li>Referencias.</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: about.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Luis Mayta</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Lead Development <a href="http://www.pimientadigital.com">Pimienta Digital</a></li>
+<li>Go enthusiast</li>
+<li>Python enthusiast</li>
+</ul>
+<h2>Contactos:</h2>
+<ul>
+<li><em>twitter</em> <em>@slovacus</em></li>
+<li><em>github</em> https://github.com/luismayta</li>
+<li><em>linkedin</em> @slovacus</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: concepts_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Conceptos de Git</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Sistema de control de versiones creado por Linus Torvalds.</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: concepts_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Sistema de control de Versiones</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Sistema que registra los cambios realizados sobre un archivo
+o conjunto de archivos a lo largo del tiempo.</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: concepts_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Branch</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Useful for 'book ended' actions</li>
+<li>Simple exception handling</li>
+<li>Built-in for File objects, etc. in 2.7</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: hooks_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Hooks de Git</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>pre-commit</li>
+<li>post-commit</li>
+<li>prepare-commit-msg</li>
+<li>post-receive</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: hooks_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>pre-commit</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>se ejecuta antes de realizar un commit</li>
+</ul>
+<p><em>Uso:</em></p>
+<ul>
+<li>Verificador de Codigo.</li>
+<li>Ejecucion de Test Unit</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: hooks_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>post-commit</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>se ejecuta despues de realizar un commit</li>
+</ul>
+<p><em>Uso:</em></p>
+<ul>
+<li>versionado a archivos static usando un archivo last_commit.</li>
+<li>notificaciones a usuarios email ...</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: hooks_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>prepare-commit-msg</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>se ejecuta antes de realizar el commit.</li>
+</ul>
+<p><em>Uso:</em></p>
+<ul>
+<li>agregar el nombre del branch al commit para gestor de proyectos como Jira, Redmine</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: hooks_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>post-receive</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>se ejecuta al realizar un push en el repositorio Bare.</li>
+</ul>
+<p><em>Uso:</em></p>
+<ul>
+<li>despliegues automaticos.</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: flow_work.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Flujo de Trabajo</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>El flujo de trabajo (workflow en inglés) es el estudio de los aspectos operacionales de una actividad de trabajo: cómo se estructuran las tareas, cómo se realizan, cuál es su orden correlativo, cómo se sincronizan, cómo fluye la información que soporta las tareas y cómo se le hace seguimiento al cumplimiento de las tareas.
+<em>Wikipedia</em></li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: file_changelog.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Changelog</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Que es?</li>
+<li>Ejemplos</li>
+<li>Standard que usamos.</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: file_changelog.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Que es?</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Un registro de cambios1 (también se usa la forma inglesa, changelog) es un archivo que lista los cambios hechos a un proyecto informático (como por ejemplo un sitio web o un proyecto de software) desde su última versión, incluyendo habitualmente corrección de errores malintencionados, nuevas características, etc. La mayoría de proyectos de código abierto incluyen un registro de cambios como uno de los ficheros más importantes de sus distribuciones.
+<em>wikipedia</em></li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: file_changelog.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Ejemplos</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li><a href="https://github.com/ruby/ruby/blob/trunk/ChangeLog">ruby changelog</a></li>
+<li>
+<p><a href="https://github.com/ruby/ruby/blob/trunk/ChangeLog">ruby changelog</a></p>
+</li>
+<li>
+<p>Que es?</p>
+</li>
+<li>Ejemplos</li>
+<li>Standard que usamos.</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: file_changelog.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Standard que usamos</h1></header>
+                
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source:  -->
+        <section class="slide">
+            <div>
+                
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: references.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>References</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li><a href="https://www.wikipedia.org">wikipedia</a></li>
+<li><a href="https://github.com">GitHub</a></li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="ribbon/js/script.js"></script>
+	<!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
