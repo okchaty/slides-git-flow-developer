@@ -6,6 +6,5 @@
 
 ## Contactos:
 
--  *twitter* *@slovacus*
--  *github* https://github.com/luismayta
--  *linkedin* @slovacus
+- [@slovacus](https://twitter.com/slovacus)
+- [github.com/luismayta](https://github.com/luismayta)
