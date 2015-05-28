@@ -57,7 +57,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 ------------------------------------------------------
 
-# Feature Branch
+# Feature
 
 - Ramas creadas para hacer nuevos desarrollos.
 
@@ -79,7 +79,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 ------------------------------------------------------
 
-# Release Branch
+# Release
 
 - Un Entregable, Finalizado de un sprint.
 
@@ -99,7 +99,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 ------------------------------------------------------
 
-# Hotfix Branch
+# Hotfix
 
 - son caracteristicas no deseadas que se tienen que Corregir inmediatamente.
 
@@ -115,7 +115,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 ------------------------------------------------------
 
-# Support Branch
+# Support
 
 - Aun no lo entiendo correctamente.
 
