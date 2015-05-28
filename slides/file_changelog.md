@@ -16,6 +16,8 @@
 # Links
 
 - [ruby](https://github.com/ruby/ruby/blob/trunk/ChangeLog)
+- [gitflow](https://github.com/nvie/gitflow/blob/develop/Changes.mdown)
+
 
 
 ------------------------------------------------------
