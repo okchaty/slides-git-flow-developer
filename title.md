@@ -1,5 +1,4 @@
-# Git Flow para Desarrolladores
-## Flujos de Trabajo con Git
+# Git Flow For Developments
 
 # Agenda
 
