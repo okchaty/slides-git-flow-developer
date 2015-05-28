@@ -1,0 +1,643 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Git Flow For Developments</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" media="print" href="ribbon/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="ribbon/css/screen.css">
+    
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="../../../.pyenv/versions/landslide-2.7.9/lib/python2.7/site-packages/landslide/themes/default/js/slides.js"></script>
+    
+    
+    <!-- /Javascripts -->
+</head>
+<body class="list">
+    
+      <!-- slide source: slides/title.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Git Flow For Developments</h1></header>
+                
+                
+                    <section class="slide-content"><h1>Agenda</h1>
+<ul>
+<li>Conceptos de Git.</li>
+<li>Hooks de Git.</li>
+<li>Que es un Flujo de Trabajo.</li>
+<li>Git Flow.</li>
+<li>Ejemplo de Uso.</li>
+<li>CHANGELOG.</li>
+<li>Referencias.</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/about.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Luis Mayta</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Software Developer</li>
+<li>Go enthusiast</li>
+<li>Python enthusiast</li>
+</ul>
+<h2>Contactos:</h2>
+<ul>
+<li><a href="https://twitter.com/slovacus">@slovacus</a></li>
+<li><a href="https://github.com/luismayta">github.com/luismayta</a></li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/concepts_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Git</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Sistema de control de versiones creado por Linus Torvalds.</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/concepts_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Sistema de control de Versiones</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Sistema que registra los cambios realizados sobre un archivo
+o conjunto de archivos a lo largo del tiempo.</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/concepts_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Branch</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>es como colocar tu codigo en una carpeta</li>
+<li>Aisla el codigo que estas modificando para que no malogres lo del RESTO</li>
+<li>Que es una rama Vip?</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/commands_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Comandos de Git</h1></header>
+                
+                
+                    <section class="slide-content"><h2>Gist</h2>
+<ul>
+<li><a href="https://gist.github.com/luismayta/4047768">Comandos</a></li>
+<li><a href="https://gist.github.com/luismayta/4634556c0be6b66f303a">Operaciones</a></li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/flow_work.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Flujo de Trabajo</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>El flujo de trabajo (workflow en inglés) es el estudio de los aspectos operacionales de una actividad de trabajo: cómo se estructuran las tareas, cómo se realizan, cuál es su orden correlativo, cómo se sincronizan, cómo fluye la información que soporta las tareas y cómo se le hace seguimiento al cumplimiento de las tareas.
+<em>Wikipedia</em></li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/gitflow.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Git Flow</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>es un flujo de trabajo para la práctica de Desarrollo propuesto por Vicente Driessen</li>
+</ul>
+<h3><a href="https://github.com/nvie/gitflow">nvie/gitflow</a></h3>
+<h3><a href="https://jacovanstaden.files.wordpress.com/2011/03/git-flow-overview.jpg">Image Git Flow</a></h3></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/gitflow.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Vincent Driessen</h1></header>
+                
+                
+                    <section class="slide-content"><p>Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Programacion y Tecnologias (Python, Vim y Git)</p>
+<ul>
+<li><a href="http://nvie.com/about">Web</a></li>
+<li><a href="https://twitter.com/nvie">@nvie</a></li>
+<li><a href="https://github.com/nvie">github.com/nvie</a></li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/gitflow.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Install</h1></header>
+                
+                
+                    <section class="slide-content"><h2><em>Linux</em></h2>
+<h3>Debian</h3>
+<ul>
+<li>apt-get install git-flow</li>
+</ul>
+<h3>Centos</h3>
+<ul>
+<li>yum install git-flow</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/gitflow.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Install OS X And Windows</h1></header>
+                
+                
+                    <section class="slide-content"><h3><em>OS X</em></h3>
+<ul>
+<li>brew install git-flow</li>
+</ul>
+<h3>Windows</h3>
+<ul>
+<li><a href="https://github.com/nvie/gitflow/wiki/Windows">Install</a></li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/gitflow.md -->
+        <section class="slide has_code">
+            <div>
+                
+                    <header><h1>Init</h1></header>
+                
+                
+                    <section class="slide-content"><div class="highlight"><pre><span class="lineno">1 </span>git flow init
+</pre></div>
+
+<h2>Especificar las ramas a trabajar</h2>
+<ul>
+<li>Branch name for production releases</li>
+<li>Branch name for "next release" development</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/gitflow.md -->
+        <section class="slide has_code">
+            <div>
+                
+                    <header><h1>Feature</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Ramas creadas para hacer nuevos desarrollos.</li>
+</ul>
+<h3>Ejemplos:</h3>
+<ul>
+<li>Casos de Uso.</li>
+<li>Tareas.</li>
+<li>Historias de Usuario.</li>
+<li>Card.</li>
+</ul>
+<h2>Commands</h2>
+<div class="highlight"><pre><span class="lineno">1 </span>git flow feature list
+<span class="lineno">2 </span>git flow feature start
+<span class="lineno">3 </span>git flow feature finish
+<span class="lineno">4 </span>git flow feature pull
+<span class="lineno">5 </span>git flow feature publish
+</pre></div>
+</section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/gitflow.md -->
+        <section class="slide has_code">
+            <div>
+                
+                    <header><h1>Release</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Un Entregable, Finalizado de un sprint.</li>
+</ul>
+<h3>Ejemplos:</h3>
+<ul>
+<li>Final de un Sprint.</li>
+<li>Presentacion de un Avance de Funcionalidad.</li>
+</ul>
+<h2>Commands</h2>
+<div class="highlight"><pre><span class="lineno">1 </span>git flow release list
+<span class="lineno">2 </span>git flow release start
+<span class="lineno">3 </span>git flow release publish
+<span class="lineno">4 </span>git flow release pull
+<span class="lineno">5 </span>git flow release finish
+</pre></div>
+</section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/gitflow.md -->
+        <section class="slide has_code">
+            <div>
+                
+                    <header><h1>Hotfix</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>son caracteristicas no deseadas que se tienen que Corregir inmediatamente.</li>
+</ul>
+<h3>Ejemplos:</h3>
+<ul>
+<li>Bugs en Production.</li>
+</ul>
+<h2>Commands</h2>
+<div class="highlight"><pre><span class="lineno">1 </span>git flow hotfix start
+<span class="lineno">2 </span>git flow hotfix finish
+</pre></div>
+</section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/gitflow.md -->
+        <section class="slide has_code">
+            <div>
+                
+                    <header><h1>Support</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Aun no lo entiendo correctamente.</li>
+</ul>
+<h2>Commands</h2>
+<div class="highlight"><pre><span class="lineno">1 </span>git flow support start
+<span class="lineno">2 </span>git flow support finish
+</pre></div>
+</section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/hooks_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Hooks de Git</h1></header>
+                
+                
+                    <section class="slide-content"><h3><a href="https://github.com/luismayta/PyHook">Pyhook</a></h3>
+<ul>
+<li>pre-commit</li>
+<li>post-commit</li>
+<li>prepare-commit-msg</li>
+<li>post-receive</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/hooks_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>pre-commit</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>se ejecuta antes de realizar un commit</li>
+</ul>
+<h3>Uso:</h3>
+<ul>
+<li>Verificador de Codigo.</li>
+<li>Ejecucion de Test Unit</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/hooks_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>post-commit</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>se ejecuta despues de realizar un commit</li>
+</ul>
+<h3>Uso:</h3>
+<ul>
+<li>versionado a archivos static usando un archivo last_commit.</li>
+<li>notificaciones a usuarios email ...</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/hooks_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>prepare-commit-msg</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>se ejecuta antes de realizar el commit.</li>
+</ul>
+<h3>Uso:</h3>
+<ul>
+<li>agregar el nombre del branch al commit para gestor de proyectos como Jira, Redmine</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/hooks_git.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>post-receive</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>se ejecuta al realizar un push en el repositorio Bare.</li>
+</ul>
+<h3>Uso:</h3>
+<ul>
+<li>despliegues automaticos.</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/file_changelog.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Changelog</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Que es?</li>
+<li>Ejemplos</li>
+<li>Standard que usamos.</li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/file_changelog.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Que es?</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li>Un registro de cambios1 (también se usa la forma inglesa, changelog) es un archivo que lista los cambios hechos a un proyecto informático (como por ejemplo un sitio web o un proyecto de software) desde su última versión, incluyendo habitualmente corrección de errores malintencionados, nuevas características, etc. La mayoría de proyectos de código abierto incluyen un registro de cambios como uno de los ficheros más importantes de sus distribuciones.
+<em>wikipedia</em></li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/file_changelog.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>Links</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li><a href="https://github.com/ruby/ruby/blob/trunk/ChangeLog">ruby</a></li>
+<li><a href="https://github.com/nvie/gitflow/blob/develop/Changes.mdown">gitflow</a></li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/file_changelog.md -->
+        <section class="slide has_code">
+            <div>
+                
+                    <header><h1>El Que Usamos</h1></header>
+                
+                
+                    <section class="slide-content"><div class="highlight"><pre><span class="lineno">1 </span><span class="c">### v1.1.9 Titulo de Sprint (DATE)</span>
+<span class="lineno">2 </span>
+<span class="lineno">3 </span><span class="o">-</span> <span class="n">Issue</span> <span class="n">Link</span> <span class="n">Titulo</span>
+<span class="lineno">4 </span><span class="o">-</span> <span class="n">Issue</span> <span class="n">Link</span> <span class="n">Titulo</span>
+<span class="lineno">5 </span>
+<span class="lineno">6 </span><span class="c">### v1.1.8 titulo de sprint (DATE)</span>
+<span class="lineno">7 </span>
+<span class="lineno">8 </span><span class="o">-</span> <span class="n">Issue</span> <span class="n">Link</span> <span class="n">Titulo</span>
+<span class="lineno">9 </span><span class="o">-</span> <span class="n">Issue</span> <span class="n">Link</span> <span class="n">Titulo</span>
+</pre></div>
+</section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+      <!-- slide source: slides/references.md -->
+        <section class="slide">
+            <div>
+                
+                    <header><h1>References</h1></header>
+                
+                
+                    <section class="slide-content"><ul>
+<li><a href="https://www.wikipedia.org">wikipedia</a></li>
+<li><a href="https://github.com">GitHub</a></li>
+</ul></section>
+                
+                <div class="presenter_notes">
+                    <section>
+                    
+                    </section>
+                </div>
+            </div>
+        </section>
+     
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="ribbon/js/script.js"></script>
+	<!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
