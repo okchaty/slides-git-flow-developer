@@ -19,7 +19,6 @@
 - [gitflow](https://github.com/nvie/gitflow/blob/develop/Changes.mdown)
 
 
-
 ------------------------------------------------------
 
 # El Que Usamos
@@ -36,5 +35,3 @@
     - Issue Link Titulo
     - Issue Link Titulo
 
-
-------------------------------------------------------
