@@ -41,4 +41,4 @@ ir a un navegador y colocar:
 http://localhost:5000
 ```
 
-[![](http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png)](http://pe.linkedin.com/in/luismayta)
+[![Analytics](https://ga-beacon.appspot.com/UA-65019326-1/git-flow-developer/readme)](https://github.com/luismayta/git-flow-developer) [![](http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png)](http://pe.linkedin.com/in/luismayta)
