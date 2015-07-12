@@ -40,3 +40,5 @@ ir a un navegador y colocar:
 ```bash
 http://localhost:5000
 ```
+
+[![](http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png)](http://pe.linkedin.com/in/luismayta)
