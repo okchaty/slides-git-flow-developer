@@ -1,3 +1,5 @@
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
+
 # Git Flow Developers
 
 This is a talk for the [Pymienta 2015](http://pimientadigital.com) conference.
