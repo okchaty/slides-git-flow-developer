@@ -1,1 +1,1 @@
-landslide
+landslide==1.1.3
