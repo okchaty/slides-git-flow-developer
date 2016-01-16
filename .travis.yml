@@ -22,8 +22,6 @@ before_install:
       brew install pip;
     fi
 
-
-
 install:
   make install
 
