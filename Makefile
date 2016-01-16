@@ -6,6 +6,8 @@ SHELL = /bin/bash
 ROOT_DIR = $(shell pwd)
 BIN_DIR = $(ROOT_DIR)/bin
 DATA_DIR = $(ROOT_DIR)/var
+SCRIPT_DIR = $(ROOT_DIR)/script
+TEST = $(shell) $(SCRIPT_DIR)/test
 WGET = wget
 BUILDOUT_CFG = $(ROOT_DIR)/etc/buildout.cfg
 BUILDOUT_DIR = $(ROOT_DIR)/lib/buildout
@@ -55,3 +57,6 @@ maintainer-clean: distclean
 
 generate:
 	$(LANDSLIDE) $(LANDSLIDE_ARGS)
+
+test:
+	$(TEST)
