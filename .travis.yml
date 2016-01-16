@@ -23,10 +23,10 @@ before_install:
     fi
 
 install:
-  uname -a && export TRAVIS=true && export TEST=true && ./script/setup
+  uname -a && export TRAVIS=true && export TEST=true && cd ~/build/luismayta/slide-git-flow-developer && make install
 
 script:
-  uname -a && export TRAVIS=true && export TEST=true && ./script/generate
+  uname -a && export TRAVIS=true && export TEST=true && cd ~/build/luismayta/slide-git-flow-developer && make test
 
 notifications:
   email: false
