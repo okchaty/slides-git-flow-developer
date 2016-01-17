@@ -13,20 +13,20 @@ python:
 sudo: true
 
 before_install:
-  - if [[ "$(uname -s)" == 'Linux' ]]; then
+  - if [[ "$TRAVIS_OS_NAME" == 'Linux' ]]; then
       travis_retry sudo apt-get update -qq;
       sudo apt-get install python-pip -y;
     fi
-  - if [[ "$(uname -s)" == 'Darwin' ]]; then
+  - if [[ "$TRAVIS_OS_NAME" == 'Darwin' ]]; then
       travis_retry brew update;
       brew install pip;
     fi
 
 install:
-  uname -a && export TRAVIS=true && export TEST=true && ./script/setup
+  make install
 
 script:
-  uname -a && export TRAVIS=true && export TEST=true && ./script/generate
+  make test
 
 notifications:
   email: false
