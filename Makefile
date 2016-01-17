@@ -19,7 +19,7 @@ BUILDOUT = $(BIN_DIR)/buildout
 BUILDOUT_ARGS = -N buildout:directory=$(ROOT_DIR)
 # VIRTUALENV_DIR = $(ROOT_DIR)/lib/virtualenv
 # PIP = $(VIRTUALENV_DIR)/bin/pip
-NOSE = $(BIN_DIR)/nosetests
+NOSE = nosetests
 # PYTHON = $(VIRTUALENV_DIR)/bin/python
 LANDSLIDE = landslide
 LANDSLIDE_CONFIGURATION = etc/landslide.cfg
