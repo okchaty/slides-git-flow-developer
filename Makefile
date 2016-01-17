@@ -11,7 +11,7 @@ TEST = $(shell) $(SCRIPT_DIR)/test
 WGET = wget
 BUILDOUT_CFG = $(ROOT_DIR)/etc/buildout.cfg
 BUILDOUT_DIR = $(ROOT_DIR)/lib/buildout
-BUILDOUT_VERSION = 2.2.1
+BUILDOUT_VERSION = 2.5.0
 BUILDOUT_BOOTSTRAP_URL = https://raw.github.com/buildout/buildout/$(BUILDOUT_VERSION)/bootstrap/bootstrap.py
 BUILDOUT_BOOTSTRAP = $(BUILDOUT_DIR)/bootstrap.py
 BUILDOUT_BOOTSTRAP_ARGS = -c $(ROOT_DIR)/etc/buildout.cfg --version=$(BUILDOUT_VERSION) buildout:directory=$(ROOT_DIR)
@@ -36,6 +36,7 @@ py27:
 buildout: py27
 	if [ ! -d $(BUILDOUT_DIR) ]; then mkdir -p $(BUILDOUT_DIR); fi
 	if [ ! -f $(BUILDOUT_BOOTSTRAP) ]; then wget -O $(BUILDOUT_BOOTSTRAP) $(BUILDOUT_BOOTSTRAP_URL); fi
+	chmod +x $(BUILDOUT_BOOTSTRAP)
 	if [ ! -x $(BUILDOUT) ]; then $(PYTHON) $(BUILDOUT_BOOTSTRAP) $(BUILDOUT_BOOTSTRAP_ARGS); fi
 	$(BUILDOUT) -c $(ROOT_DIR)/etc/buildout.cfg $(BUILDOUT_ARGS)
 
@@ -45,6 +46,7 @@ clean:
 
 
 distclean: clean
+	git clean -xdf
 	rm -rf $(ROOT_DIR)/lib
 	rm -rf $(ROOT_DIR)/*.egg-info
 	rm -rf $(ROOT_DIR)/demo/*.egg-info
