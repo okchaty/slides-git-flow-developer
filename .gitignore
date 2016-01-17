@@ -1,4 +1,5 @@
 lib/
+bin/
 *.DS_Store
 *.pyc
 *.swp
