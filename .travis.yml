@@ -21,6 +21,7 @@ before_install:
       travis_retry brew update;
       brew install python;
       brew install pip;
+      brew install pyenv-virtualenv
     fi
 
 install:
