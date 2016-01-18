@@ -33,6 +33,9 @@ script:
 notifications:
   email: false
 
+exclude:
+  - os: osx
+
 # Local Variables:
 # indent-tabs-mode: nil
 # coding: utf-8
