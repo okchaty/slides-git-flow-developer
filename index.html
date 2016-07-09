@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="utf-8">
     <title>Git Flow For Developments</title>
-    <!-- Styles -->
-    
-    <link rel="stylesheet" media="print" href="profero/css/print.css">
-    <link rel="stylesheet" media="screen, projection" href="profero/css/screen.css">
-    
-    
-    <!-- /Styles -->
 
+
+    <meta name="description" content="">
+		<meta name="author" content="">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="theme/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="theme/reveal.js/css/theme/solarized.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <!-- <link rel="stylesheet" href="theme/reveal.js/lib/css/zenburn.css"> -->
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="theme/reveal.js/css/print/' + ( window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">');
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="theme/reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
 </head>
 <body>
-<div id="impress" class="impress-not-supported">
-
-    <div class="fallback-message">
-        <p>Your browser <b>doesn't support features required</b> by impress.js, so are presented with simplified version of this presentation.</p>
-        <p>For the best experience please use latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 and Internet Explorer 10 <i>should</i> also handle it.</p>
-    </div>
-      
+<div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        
         <!-- slide source: slides/title.md -->
+        <section>
+            
+            <h1>Git Flow For Developments</h1>
+            
+            
+            
+        </section>
         
+        <!-- slide source: slides/title.md -->
+        <section>
             
-            <div class="step" data-x="6400" data-y="3200"
-                 data-rotate="12" data-scale="2">
-            
-        
-            
-               <header><h1><h1>Git Flow For Developments</h1></h1></header>
+            <h1>Agenda</h1>
             
             
-               <section>
-                  <div><h1>Agenda</h1>
-<ul>
+            <ul>
 <li>Conceptos de Git.</li>
 <li>Hooks de Git.</li>
 <li>Que es un Flujo de Trabajo.</li>
@@ -42,34 +56,18 @@
 <li>Ejemplo de Uso.</li>
 <li>CHANGELOG.</li>
 <li>Referencias.</li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/title.md">slides/title.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  1/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/about.md -->
-        
+        <section>
             
-            <div class="step" data-x="4800" data-y="2400"
-                 data-rotate="14" data-scale="3">
-            
-        
-            
-               <header><h1><h1>Luis Mayta</h1></h1></header>
+            <h1>Luis Mayta</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>Software Developer</li>
 <li>Go enthusiast</li>
 <li>Python enthusiast</li>
@@ -78,248 +76,120 @@
 <ul>
 <li><a href="https://twitter.com/slovacus">@slovacus</a></li>
 <li><a href="https://github.com/luismayta">github.com/luismayta</a></li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/about.md">slides/about.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  2/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/concepts_git.md -->
-        
+        <section>
             
-            <div class="step" data-x="3200" data-y="6400"
-                 data-rotate="36" data-scale="4">
-            
-        
-            
-               <header><h1><h1>Git</h1></h1></header>
+            <h1>Git</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>Sistema de control de versiones creado por Linus Torvalds.</li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/concepts_git.md">slides/concepts_git.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  3/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/concepts_git.md -->
-        
+        <section>
             
-            <div class="step" data-x="1600" data-y="4000"
-                 data-rotate="28" data-scale="5">
-            
-        
-            
-               <header><h1><h1>Sistema de control de Versiones</h1></h1></header>
+            <h1>Sistema de control de Versiones</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>Sistema que registra los cambios realizados sobre un archivo
 o conjunto de archivos a lo largo del tiempo.</li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/concepts_git.md">slides/concepts_git.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  4/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/concepts_git.md -->
-        
+        <section>
             
-            <div class="step" data-x="0" data-y="9600"
-                 data-rotate="60" data-scale="6">
-            
-        
-            
-               <header><h1><h1>Branch</h1></h1></header>
+            <h1>Branch</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>es como colocar tu codigo en una carpeta</li>
 <li>Aisla el codigo que estas modificando para que no malogres lo del RESTO</li>
 <li>Que es una rama Vip?</li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/concepts_git.md">slides/concepts_git.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  5/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/commands_git.md -->
-        
+        <section>
             
-            <div class="step" data-x="-1600" data-y="5600"
-                 data-rotate="42" data-scale="7">
-            
-        
-            
-               <header><h1><h1>Comandos de Git</h1></h1></header>
+            <h1>Comandos de Git</h1>
             
             
-               <section>
-                  <div><h2>Gist</h2>
+            <h2>Gist</h2>
 <ul>
 <li><a href="https://gist.github.com/luismayta/4047768">Comandos</a></li>
 <li><a href="https://gist.github.com/luismayta/4634556c0be6b66f303a">Operaciones</a></li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/commands_git.md">slides/commands_git.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  6/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/flow_work.md -->
-        
+        <section>
             
-            <div class="step" data-x="-3200" data-y="12800"
-                 data-rotate="84" data-scale="1">
-            
-        
-            
-               <header><h1><h1>Flujo de Trabajo</h1></h1></header>
+            <h1>Flujo de Trabajo</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>El flujo de trabajo (workflow en inglés) es el estudio de los aspectos operacionales de una actividad de trabajo: cómo se estructuran las tareas, cómo se realizan, cuál es su orden correlativo, cómo se sincronizan, cómo fluye la información que soporta las tareas y cómo se le hace seguimiento al cumplimiento de las tareas.
 <em>Wikipedia</em></li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/flow_work.md">slides/flow_work.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  7/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/gitflow.md -->
-        
+        <section>
             
-            <div class="step" data-x="-4800" data-y="7200"
-                 data-rotate="56" data-scale="2">
-            
-        
-            
-               <header><h1><h1>Git Flow</h1></h1></header>
+            <h1>Git Flow</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>es un flujo de trabajo para la práctica de Desarrollo propuesto por Vicente Driessen</li>
 </ul>
 <h3><a href="https://github.com/nvie/gitflow">nvie/gitflow</a></h3>
-<h3><a href="https://jacovanstaden.files.wordpress.com/2011/03/git-flow-overview.jpg">Image Git Flow</a></h3></div>
-               </section>
+<h3><a href="https://jacovanstaden.files.wordpress.com/2011/03/git-flow-overview.jpg">Image Git Flow</a></h3>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/gitflow.md">slides/gitflow.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  8/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/gitflow.md -->
-        
+        <section>
             
-            <div class="step" data-x="-6400" data-y="16000"
-                 data-rotate="108" data-scale="3">
-            
-        
-            
-               <header><h1><h1>Vincent Driessen</h1></h1></header>
+            <h1>Vincent Driessen</h1>
             
             
-               <section>
-                  <div><p>Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Programacion y Tecnologias (Python, Vim y Git)</p>
+            <p>Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Programacion y Tecnologias (Python, Vim y Git)</p>
 <ul>
 <li><a href="http://nvie.com/about">Web</a></li>
 <li><a href="https://twitter.com/nvie">@nvie</a></li>
 <li><a href="https://github.com/nvie">github.com/nvie</a></li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/gitflow.md">slides/gitflow.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  9/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/gitflow.md -->
-        
+        <section>
             
-            <div class="step" data-x="-8000" data-y="800"
-                 data-rotate="70" data-scale="4">
-            
-        
-            
-               <header><h1><h1>Install</h1></h1></header>
+            <h1>Install</h1>
             
             
-               <section>
-                  <div><h2><em>Linux</em></h2>
+            <h2><em>Linux</em></h2>
 <h3>Debian</h3>
 <ul>
 <li>apt-get install git-flow</li>
@@ -327,102 +197,54 @@ o conjunto de archivos a lo largo del tiempo.</li>
 <h3>Centos</h3>
 <ul>
 <li>yum install git-flow</li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/gitflow.md">slides/gitflow.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  10/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/gitflow.md -->
-        
+        <section>
             
-            <div class="step" data-x="-9600" data-y="3200"
-                 data-rotate="132" data-scale="5">
-            
-        
-            
-               <header><h1><h1>Install OS X And Windows</h1></h1></header>
+            <h1>Install OS X And Windows</h1>
             
             
-               <section>
-                  <div><h3><em>OS X</em></h3>
+            <h3><em>OS X</em></h3>
 <ul>
 <li>brew install git-flow</li>
 </ul>
 <h3>Windows</h3>
 <ul>
 <li><a href="https://github.com/nvie/gitflow/wiki/Windows">Install</a></li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/gitflow.md">slides/gitflow.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  11/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/gitflow.md -->
-        
+        <section>
             
-            <div class="step" data-x="-11200" data-y="2400"
-                 data-rotate="84" data-scale="6">
-            
-        
-            
-               <header><h1><h1>Init</h1></h1></header>
+            <h1>Init</h1>
             
             
-               <section>
-                  <div><div class="highlight"><pre><span class="lineno">1 </span>git flow init
+            <div class="highlight"><pre><span class="lineno">1 </span>git flow init
 </pre></div>
 
 <h2>Especificar las ramas a trabajar</h2>
 <ul>
 <li>Branch name for production releases</li>
 <li>Branch name for "next release" development</li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/gitflow.md">slides/gitflow.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  12/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/gitflow.md -->
-        
+        <section>
             
-            <div class="step" data-x="-12800" data-y="6400"
-                 data-rotate="156" data-scale="7">
-            
-        
-            
-               <header><h1><h1>Feature</h1></h1></header>
+            <h1>Feature</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>Ramas creadas para hacer nuevos desarrollos.</li>
 </ul>
 <h3>Ejemplos:</h3>
@@ -439,34 +261,18 @@ o conjunto de archivos a lo largo del tiempo.</li>
 <span class="lineno">4 </span>git flow feature pull
 <span class="lineno">5 </span>git flow feature publish
 </pre></div>
-</div>
-               </section>
+
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/gitflow.md">slides/gitflow.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  13/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/gitflow.md -->
-        
+        <section>
             
-            <div class="step" data-x="-14400" data-y="4000"
-                 data-rotate="98" data-scale="1">
-            
-        
-            
-               <header><h1><h1>Release</h1></h1></header>
+            <h1>Release</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>Un Entregable, Finalizado de un sprint.</li>
 </ul>
 <h3>Ejemplos:</h3>
@@ -481,34 +287,18 @@ o conjunto de archivos a lo largo del tiempo.</li>
 <span class="lineno">4 </span>git flow release pull
 <span class="lineno">5 </span>git flow release finish
 </pre></div>
-</div>
-               </section>
+
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/gitflow.md">slides/gitflow.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  14/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/gitflow.md -->
-        
+        <section>
             
-            <div class="step" data-x="-16000" data-y="9600"
-                 data-rotate="180" data-scale="2">
-            
-        
-            
-               <header><h1><h1>Hotfix</h1></h1></header>
+            <h1>Hotfix</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>son caracteristicas no deseadas que se tienen que Corregir inmediatamente.</li>
 </ul>
 <h3>Ejemplos:</h3>
@@ -519,326 +309,166 @@ o conjunto de archivos a lo largo del tiempo.</li>
 <div class="highlight"><pre><span class="lineno">1 </span>git flow hotfix start
 <span class="lineno">2 </span>git flow hotfix finish
 </pre></div>
-</div>
-               </section>
+
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/gitflow.md">slides/gitflow.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  15/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/gitflow.md -->
-        
+        <section>
             
-            <div class="step" data-x="-17600" data-y="5600"
-                 data-rotate="112" data-scale="3">
-            
-        
-            
-               <header><h1><h1>Support</h1></h1></header>
+            <h1>Support</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>Aun no lo entiendo correctamente.</li>
 </ul>
 <h2>Commands</h2>
 <div class="highlight"><pre><span class="lineno">1 </span>git flow support start
 <span class="lineno">2 </span>git flow support finish
 </pre></div>
-</div>
-               </section>
+
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/gitflow.md">slides/gitflow.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  16/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/hooks_git.md -->
-        
+        <section>
             
-            <div class="step" data-x="-19200" data-y="12800"
-                 data-rotate="204" data-scale="4">
-            
-        
-            
-               <header><h1><h1>Hooks de Git</h1></h1></header>
+            <h1>Hooks de Git</h1>
             
             
-               <section>
-                  <div><h3><a href="https://github.com/luismayta/PyHook">Pyhook</a></h3>
+            <h3><a href="https://github.com/luismayta/PyHook">Pyhook</a></h3>
 <ul>
 <li>pre-commit</li>
 <li>post-commit</li>
 <li>prepare-commit-msg</li>
 <li>post-receive</li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/hooks_git.md">slides/hooks_git.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  17/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/hooks_git.md -->
-        
+        <section>
             
-            <div class="step" data-x="-20800" data-y="7200"
-                 data-rotate="126" data-scale="5">
-            
-        
-            
-               <header><h1><h1>pre-commit</h1></h1></header>
+            <h1>pre-commit</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>se ejecuta antes de realizar un commit</li>
 </ul>
 <h3>Uso:</h3>
 <ul>
 <li>Verificador de Codigo.</li>
 <li>Ejecucion de Test Unit</li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/hooks_git.md">slides/hooks_git.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  18/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/hooks_git.md -->
-        
+        <section>
             
-            <div class="step" data-x="-22400" data-y="16000"
-                 data-rotate="228" data-scale="6">
-            
-        
-            
-               <header><h1><h1>post-commit</h1></h1></header>
+            <h1>post-commit</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>se ejecuta despues de realizar un commit</li>
 </ul>
 <h3>Uso:</h3>
 <ul>
 <li>versionado a archivos static usando un archivo last_commit.</li>
 <li>notificaciones a usuarios email ...</li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/hooks_git.md">slides/hooks_git.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  19/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/hooks_git.md -->
-        
+        <section>
             
-            <div class="step" data-x="-24000" data-y="800"
-                 data-rotate="140" data-scale="7">
-            
-        
-            
-               <header><h1><h1>prepare-commit-msg</h1></h1></header>
+            <h1>prepare-commit-msg</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>se ejecuta antes de realizar el commit.</li>
 </ul>
 <h3>Uso:</h3>
 <ul>
 <li>agregar el nombre del branch al commit para gestor de proyectos como Jira, Redmine</li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/hooks_git.md">slides/hooks_git.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  20/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/hooks_git.md -->
-        
+        <section>
             
-            <div class="step" data-x="-25600" data-y="3200"
-                 data-rotate="252" data-scale="1">
-            
-        
-            
-               <header><h1><h1>post-receive</h1></h1></header>
+            <h1>post-receive</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>se ejecuta al realizar un push en el repositorio Bare.</li>
 </ul>
 <h3>Uso:</h3>
 <ul>
 <li>despliegues automaticos.</li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/hooks_git.md">slides/hooks_git.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  21/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/file_changelog.md -->
-        
+        <section>
             
-            <div class="step" data-x="-27200" data-y="2400"
-                 data-rotate="154" data-scale="2">
-            
-        
-            
-               <header><h1><h1>Changelog</h1></h1></header>
+            <h1>Changelog</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>Que es?</li>
 <li>Ejemplos</li>
 <li>Standard que usamos.</li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/file_changelog.md">slides/file_changelog.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  22/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/file_changelog.md -->
-        
+        <section>
             
-            <div class="step" data-x="-28800" data-y="6400"
-                 data-rotate="276" data-scale="3">
-            
-        
-            
-               <header><h1><h1>Que es?</h1></h1></header>
+            <h1>Que es?</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li>Un registro de cambios1 (también se usa la forma inglesa, changelog) es un archivo que lista los cambios hechos a un proyecto informático (como por ejemplo un sitio web o un proyecto de software) desde su última versión, incluyendo habitualmente corrección de errores malintencionados, nuevas características, etc. La mayoría de proyectos de código abierto incluyen un registro de cambios como uno de los ficheros más importantes de sus distribuciones.
 <em>wikipedia</em></li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/file_changelog.md">slides/file_changelog.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  23/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/file_changelog.md -->
-        
+        <section>
             
-            <div class="step" data-x="-30400" data-y="4000"
-                 data-rotate="168" data-scale="4">
-            
-        
-            
-               <header><h1><h1>Links</h1></h1></header>
+            <h1>Links</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li><a href="https://github.com/ruby/ruby/blob/trunk/ChangeLog">ruby</a></li>
 <li><a href="https://github.com/nvie/gitflow/blob/develop/Changes.mdown">gitflow</a></li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/file_changelog.md">slides/file_changelog.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  24/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/file_changelog.md -->
-        
+        <section>
             
-            <div class="step" data-x="-32000" data-y="9600"
-                 data-rotate="300" data-scale="5">
-            
-        
-            
-               <header><h1><h1>El Que Usamos</h1></h1></header>
+            <h1>El Que Usamos</h1>
             
             
-               <section>
-                  <div><div class="highlight"><pre><span class="lineno">1 </span><span class="c">### v1.1.9 Titulo de Sprint (DATE)</span>
+            <div class="highlight"><pre><span class="lineno">1 </span><span class="c">### v1.1.9 Titulo de Sprint (DATE)</span>
 <span class="lineno">2 </span>
 <span class="lineno">3 </span><span class="o">-</span> <span class="n">Issue</span> <span class="n">Link</span> <span class="n">Titulo</span>
 <span class="lineno">4 </span><span class="o">-</span> <span class="n">Issue</span> <span class="n">Link</span> <span class="n">Titulo</span>
@@ -848,57 +478,74 @@ o conjunto de archivos a lo largo del tiempo.</li>
 <span class="lineno">8 </span><span class="o">-</span> <span class="n">Issue</span> <span class="n">Link</span> <span class="n">Titulo</span>
 <span class="lineno">9 </span><span class="o">-</span> <span class="n">Issue</span> <span class="n">Link</span> <span class="n">Titulo</span>
 </pre></div>
-</div>
-               </section>
+
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/file_changelog.md">slides/file_changelog.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  25/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
         <!-- slide source: slides/references.md -->
-        
+        <section>
             
-            <div class="step" data-x="-33600" data-y="5600"
-                 data-rotate="182" data-scale="6">
-            
-        
-            
-               <header><h1><h1>References</h1></h1></header>
+            <h1>References</h1>
             
             
-               <section>
-                  <div><ul>
+            <ul>
 <li><a href="https://www.wikipedia.org">wikipedia</a></li>
 <li><a href="https://github.com">GitHub</a></li>
-</ul></div>
-               </section>
+</ul>
             
-            <footer>
-                
-                <aside class="source">
-                  Source: <a href="slides/references.md">slides/references.md</a>
-                </aside>
-                
-                <aside class="page_number">
-                  26/26
-                </aside>
-            </footer>
-        </div>
-      
+            
+        </section>
+        
+    </div>
 </div>
-<!-- Javascripts -->
-
-<script type="text/javascript" src="profero/js/slides.js"></script>
 
 
-<!-- /Javascripts -->
+<!-- JavaScript -->
+<script src="theme/reveal.js/lib/js/head.min.js"></script>
+<script src="theme/reveal.js/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        rollingLinks: false,
+        theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+        width: "80%",
+        minScale: 0.2,
+        maxScale: 1.0,
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'theme/reveal.js/lib/js/classList.js', condition: function (){
+                return !document.body.classList;
+            } },
+            { src: 'theme/reveal.js/plugin/markdown/marked.js', condition: function (){
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: 'theme/reveal.js/plugin/markdown/markdown.js', condition: function (){
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: 'theme/reveal.js/plugin/highlight/highlight.js', async: true, callback: function (){
+                hljs.initHighlightingOnLoad();
+            } },
+            { src: 'theme/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function (){
+                return !!document.body.classList;
+            } }
+//            { src: 'theme/reveal.js/plugin/notes/notes.js', async: true, condition: function (){
+//                return !!document.body.classList;
+//            } },
+//            { src: 'theme/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+
+</script>
+
 </body>
 </html>

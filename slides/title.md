@@ -1,5 +1,7 @@
 # Git Flow For Developments
 
+------------------------------------------------------
+
 # Agenda
 
 - Conceptos de Git.
