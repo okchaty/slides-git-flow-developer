@@ -1,6 +1,5 @@
 <span class="badges">
 [![Build Status](https://travis-ci.org/luismayta/slide-git-flow-developer.svg)](https://travis-ci.org/luismayta/slide-git-flow-developer)
-[![Stories in Ready](https://badge.waffle.io/luismayta/slide-git-flow-developer.svg?label=ready&title=Ready)](http://waffle.io/luismayta/slide-git-flow-developer)
 [![GitHub issues](https://img.shields.io/github/issues/luismayta/slide-git-flow-developer.svg)](https://github.com/luismayta/slide-git-flow-developer)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 </span>
@@ -51,6 +50,6 @@ http://localhost:5000
 <span class="badges">
 
 [![Analytics](https://ga-beacon.appspot.com/UA-65019326-1/slide-git-flow-developer/readme)](https://github.com/luismayta/slide-git-flow-developer)
-[![](http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png)](http://pe.linkedin.com/in/luismayta)
+[![Linkedin](http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png)](http://pe.linkedin.com/in/luismayta)
 
 </span>
