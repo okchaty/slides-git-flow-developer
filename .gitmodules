@@ -1,0 +1,3 @@
+[submodule "landslide-theme"]
+	path = landslide-theme
+	url = https://github.com/luismayta/landslide-theme
