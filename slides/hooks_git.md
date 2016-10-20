@@ -1,7 +1,5 @@
 # Hooks de Git
 
-### [Pyhook](https://github.com/luismayta/PyHook)
-
 - pre-commit
 - post-commit
 - prepare-commit-msg
@@ -11,9 +9,10 @@
 
 ------------------------------------------------------
 
-# pre-commit
+# [pre-commit](http://pre-commit.com/)
 
 - se ejecuta antes de realizar un commit
+
 
 ### Uso:
 

@@ -68,7 +68,9 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 - Historias de Usuario.
 - Card.
 
-## Commands
+------------------------------------------------------
+
+# Commands Feature
 
     !bash
     git flow feature list
@@ -88,7 +90,9 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 - Final de un Sprint.
 - Presentacion de un Avance de Funcionalidad.
 
-## Commands
+------------------------------------------------------
+
+# Commands release
 
     !bash
     git flow release list
@@ -107,7 +111,9 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 - Bugs en Production.
 
-## Commands
+------------------------------------------------------
+
+# Commands hotfix
 
     !bash
     git flow hotfix start
@@ -117,9 +123,12 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 # Support
 
-- Aun no lo entiendo correctamente.
+- note: The support subcommand is still very EXPERIMENTAL!
+- note: DO NOT use it in a production situation.
 
-## Commands
+------------------------------------------------------
+
+## Commands support
 
     !bash
     git flow support start

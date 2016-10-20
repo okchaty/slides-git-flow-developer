@@ -8,7 +8,7 @@
 
 # Que es?
 
-- Un registro de cambios1 (también se usa la forma inglesa, changelog) es un archivo que lista los cambios hechos a un proyecto informático (como por ejemplo un sitio web o un proyecto de software) desde su última versión, incluyendo habitualmente corrección de errores malintencionados, nuevas características, etc. La mayoría de proyectos de código abierto incluyen un registro de cambios como uno de los ficheros más importantes de sus distribuciones.
+- Un registro de cambios (también se usa la forma inglesa, changelog) es un archivo que lista los cambios hechos a un proyecto informático (como por ejemplo un sitio web o un proyecto de software) desde su última versión, incluyendo habitualmente corrección de errores malintencionados, nuevas características, etc. La mayoría de proyectos de código abierto incluyen un registro de cambios como uno de los ficheros más importantes de sus distribuciones.
 *wikipedia*
 
 ------------------------------------------------------
@@ -34,4 +34,3 @@
 
     - Issue Link Titulo
     - Issue Link Titulo
-
