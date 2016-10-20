@@ -25,8 +25,10 @@ This file uses change log convention from [Keep a CHANGELOG](http://keepachangel
 - [#1](#1)
 
 
-[unreleased]: https://github.com/luismayta/slide-git-flow-developer/compare/v1.0.2...HEAD
-[v1.0.1]: https://github.com/luismayta/slide-git-flow-developer/compare/v1.0.1...v1.0.2
+[unreleased]: https://github.com/luismayta/slide-git-flow-developer/compare/v1.0.3...HEAD
+[v1.0.3]: https://github.com/luismayta/slide-git-flow-developer/compare/v1.0.2...v1.0.3
+[v1.0.2]: https://github.com/luismayta/slide-git-flow-developer/compare/v1.0.1...v1.0.2
+[v1.0.1]: https://github.com/luismayta/slide-git-flow-developer/compare/v1.0.0...v1.0.1
 [v1.0.0]: https://github.com/luismayta/slide-git-flow-developer/compare/v0.0.0...v1.0.0
 
 [CONTRIBUTING.md]: CONTRIBUTING.md
