@@ -1,14 +1,13 @@
 <span class="badges">
-[![Build Status](https://travis-ci.org/luismayta/git-flow-developer.svg)](https://travis-ci.org/luismayta/git-flow-developer)
-[![Stories in Ready](https://badge.waffle.io/luismayta/git-flow-developer.svg?label=ready&title=Ready)](http://waffle.io/luismayta/git-flow-developer)
-[![GitHub issues](https://img.shields.io/github/issues/luismayta/git-flow-developer.svg)](https://github.com/luismayta/git-flow-developer)
+[![Build Status](https://travis-ci.org/luismayta/slide-git-flow-developer.svg)](https://travis-ci.org/luismayta/slide-git-flow-developer)
+[![GitHub issues](https://img.shields.io/github/issues/luismayta/slide-git-flow-developer.svg)](https://github.com/luismayta/slide-git-flow-developer)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 </span>
 
 # Git Flow Developers
 
 This is a talk for the [Pymienta 2015](http://pimientadigital.com) conference.
-You can see the live presentation [here](http://luismayta.github.io/git-flow-developer).
+You can see the live presentation [here](http://luismayta.github.io/slide-git-flow-developer).
 
 ## Install
 
@@ -50,7 +49,7 @@ http://localhost:5000
 
 <span class="badges">
 
-[![Analytics](https://ga-beacon.appspot.com/UA-65019326-1/git-flow-developer/readme)](https://github.com/luismayta/git-flow-developer)
-[![](http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png)](http://pe.linkedin.com/in/luismayta)
+[![Analytics](https://ga-beacon.appspot.com/UA-65019326-1/slide-git-flow-developer/readme)](https://github.com/luismayta/slide-git-flow-developer)
+[![Linkedin](http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png)](http://pe.linkedin.com/in/luismayta)
 
 </span>
