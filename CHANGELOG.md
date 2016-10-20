@@ -4,20 +4,25 @@ This file uses change log convention from [Keep a CHANGELOG](http://keepachangel
 
 ## [Unreleased][unreleased]
 
+# [v1.0.3] - 2016-10-20
+
+- [#16](#16)
+- [#15](#15)
+
 # [v1.0.2] - 2016-01-16
 
-- feature/#7
+- [#7](#7)
 
 # [v1.0.1] - 2015-07-28
 
-- feature/#5
+- [#5](#5)
 
 # [v1.0.0] - 2015-07-12
 
-- feature/#4
-- feature/#3
-- feature/#2
-- feature/#1
+- [#4](#4)
+- [#3](#3)
+- [#2](#2)
+- [#1](#1)
 
 
 [unreleased]: https://github.com/luismayta/slide-git-flow-developer/compare/v1.0.2...HEAD
