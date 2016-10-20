@@ -27,8 +27,8 @@
 
 ### Uso:
 
-- versionado a archivos static usando un archivo last_commit.
-- notificaciones a usuarios email ...
+- Versionado de archivos static empleando last_commit.
+- Notificaciones a usuarios email, etc.
 
 ------------------------------------------------------
 
@@ -38,7 +38,7 @@
 
 ### Uso:
 
-- agregar el nombre del branch al commit para gestor de proyectos como Jira, Redmine
+- agregar el nombre del branch hacia el titulo del commit
 
 ------------------------------------------------------
 

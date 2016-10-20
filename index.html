@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="theme/reveal.js/css/theme/solarized.css" id="theme">
 
     <!-- For syntax highlighting -->
-    <!-- <link rel="stylesheet" href="theme/reveal.js/lib/css/zenburn.css"> -->
+    <link rel="stylesheet" href="theme/reveal.js/lib/css/zenburn.css">
 
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
@@ -49,8 +49,6 @@
             
             
             <ul>
-<li>Conceptos de Git.</li>
-<li>Hooks de Git.</li>
 <li>Que es un Flujo de Trabajo.</li>
 <li>Git Flow.</li>
 <li>Ejemplo de Uso.</li>
@@ -76,63 +74,6 @@
 <ul>
 <li><a href="https://twitter.com/slovacus">@slovacus</a></li>
 <li><a href="https://github.com/luismayta">github.com/luismayta</a></li>
-</ul>
-            
-            
-        </section>
-        
-        <!-- slide source: slides/concepts_git.md -->
-        <section>
-            
-            <h1>Git</h1>
-            
-            
-            <ul>
-<li>Sistema de control de versiones creado por Linus Torvalds.</li>
-</ul>
-            
-            
-        </section>
-        
-        <!-- slide source: slides/concepts_git.md -->
-        <section>
-            
-            <h1>Sistema de control de Versiones</h1>
-            
-            
-            <ul>
-<li>Sistema que registra los cambios realizados sobre un archivo
-o conjunto de archivos a lo largo del tiempo.</li>
-</ul>
-            
-            
-        </section>
-        
-        <!-- slide source: slides/concepts_git.md -->
-        <section>
-            
-            <h1>Branch</h1>
-            
-            
-            <ul>
-<li>es como colocar tu codigo en una carpeta</li>
-<li>Aisla el codigo que estas modificando para que no malogres lo del RESTO</li>
-<li>Que es una rama Vip?</li>
-</ul>
-            
-            
-        </section>
-        
-        <!-- slide source: slides/commands_git.md -->
-        <section>
-            
-            <h1>Comandos de Git</h1>
-            
-            
-            <h2>Gist</h2>
-<ul>
-<li><a href="https://gist.github.com/luismayta/4047768">Comandos</a></li>
-<li><a href="https://gist.github.com/luismayta/4634556c0be6b66f303a">Operaciones</a></li>
 </ul>
             
             
@@ -254,8 +195,17 @@ o conjunto de archivos a lo largo del tiempo.</li>
 <li>Historias de Usuario.</li>
 <li>Card.</li>
 </ul>
-<h2>Commands</h2>
-<div class="highlight"><pre><span class="lineno">1 </span>git flow feature list
+            
+            
+        </section>
+        
+        <!-- slide source: slides/gitflow.md -->
+        <section>
+            
+            <h1>Commands Feature</h1>
+            
+            
+            <div class="highlight"><pre><span class="lineno">1 </span>git flow feature list
 <span class="lineno">2 </span>git flow feature start
 <span class="lineno">3 </span>git flow feature finish
 <span class="lineno">4 </span>git flow feature pull
@@ -280,8 +230,17 @@ o conjunto de archivos a lo largo del tiempo.</li>
 <li>Final de un Sprint.</li>
 <li>Presentacion de un Avance de Funcionalidad.</li>
 </ul>
-<h2>Commands</h2>
-<div class="highlight"><pre><span class="lineno">1 </span>git flow release list
+            
+            
+        </section>
+        
+        <!-- slide source: slides/gitflow.md -->
+        <section>
+            
+            <h1>Commands release</h1>
+            
+            
+            <div class="highlight"><pre><span class="lineno">1 </span>git flow release list
 <span class="lineno">2 </span>git flow release start
 <span class="lineno">3 </span>git flow release publish
 <span class="lineno">4 </span>git flow release pull
@@ -305,8 +264,17 @@ o conjunto de archivos a lo largo del tiempo.</li>
 <ul>
 <li>Bugs en Production.</li>
 </ul>
-<h2>Commands</h2>
-<div class="highlight"><pre><span class="lineno">1 </span>git flow hotfix start
+            
+            
+        </section>
+        
+        <!-- slide source: slides/gitflow.md -->
+        <section>
+            
+            <h1>Commands hotfix</h1>
+            
+            
+            <div class="highlight"><pre><span class="lineno">1 </span>git flow hotfix start
 <span class="lineno">2 </span>git flow hotfix finish
 </pre></div>
 
@@ -321,10 +289,20 @@ o conjunto de archivos a lo largo del tiempo.</li>
             
             
             <ul>
-<li>Aun no lo entiendo correctamente.</li>
+<li>note: The support subcommand is still very EXPERIMENTAL!</li>
+<li>note: DO NOT use it in a production situation.</li>
 </ul>
-<h2>Commands</h2>
-<div class="highlight"><pre><span class="lineno">1 </span>git flow support start
+            
+            
+        </section>
+        
+        <!-- slide source: slides/gitflow.md -->
+        <section>
+            
+            <h2>Commands support</h2>
+            
+            
+            <div class="highlight"><pre><span class="lineno">1 </span>git flow support start
 <span class="lineno">2 </span>git flow support finish
 </pre></div>
 
@@ -338,8 +316,7 @@ o conjunto de archivos a lo largo del tiempo.</li>
             <h1>Hooks de Git</h1>
             
             
-            <h3><a href="https://github.com/luismayta/PyHook">Pyhook</a></h3>
-<ul>
+            <ul>
 <li>pre-commit</li>
 <li>post-commit</li>
 <li>prepare-commit-msg</li>
@@ -352,7 +329,7 @@ o conjunto de archivos a lo largo del tiempo.</li>
         <!-- slide source: slides/hooks_git.md -->
         <section>
             
-            <h1>pre-commit</h1>
+            <h1><a href="http://pre-commit.com/">pre-commit</a></h1>
             
             
             <ul>
@@ -378,8 +355,8 @@ o conjunto de archivos a lo largo del tiempo.</li>
 </ul>
 <h3>Uso:</h3>
 <ul>
-<li>versionado a archivos static usando un archivo last_commit.</li>
-<li>notificaciones a usuarios email ...</li>
+<li>Versionado de archivos static empleando last_commit.</li>
+<li>Notificaciones a usuarios email, etc.</li>
 </ul>
             
             
@@ -396,7 +373,7 @@ o conjunto de archivos a lo largo del tiempo.</li>
 </ul>
 <h3>Uso:</h3>
 <ul>
-<li>agregar el nombre del branch al commit para gestor de proyectos como Jira, Redmine</li>
+<li>agregar el nombre del branch hacia el titulo del commit</li>
 </ul>
             
             
@@ -441,7 +418,7 @@ o conjunto de archivos a lo largo del tiempo.</li>
             
             
             <ul>
-<li>Un registro de cambios1 (también se usa la forma inglesa, changelog) es un archivo que lista los cambios hechos a un proyecto informático (como por ejemplo un sitio web o un proyecto de software) desde su última versión, incluyendo habitualmente corrección de errores malintencionados, nuevas características, etc. La mayoría de proyectos de código abierto incluyen un registro de cambios como uno de los ficheros más importantes de sus distribuciones.
+<li>Un registro de cambios (también se usa la forma inglesa, changelog) es un archivo que lista los cambios hechos a un proyecto informático (como por ejemplo un sitio web o un proyecto de software) desde su última versión, incluyendo habitualmente corrección de errores malintencionados, nuevas características, etc. La mayoría de proyectos de código abierto incluyen un registro de cambios como uno de los ficheros más importantes de sus distribuciones.
 <em>wikipedia</em></li>
 </ul>
             
