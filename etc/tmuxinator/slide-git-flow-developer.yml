@@ -1,0 +1,77 @@
+# ~/.tmuxinator/slide-git-flow-developer.yml
+name: slide-git-flow-developer
+root: <%= ENV["PROJECTS"] %>/slides/slide-git-flow-developer
+tmux_options: -2
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+pre:
+    - make environment
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: logs
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+# Runs after everything. Use it to attach to tmux with custom options etc.
+# post: tmux -CC attach -t slide-git-flow-developer
+
+windows:
+  - editor:
+      layout: main-vertical
+      panes:
+        - editor:
+            - pyenv activate slide-git-flow-developer
+            - gvm pkgset use slide-git-flow-developer
+            - <%= ENV["EDITOR"] %>
+        - docker:
+            - pyenv activate slide-git-flow-developer
+            - gvm pkgset use slide-git-flow-developer
+  - python:
+      layout: main-vertical
+      panes:
+        - python:
+            - pyenv activate slide-git-flow-developer
+            - gvm pkgset use slide-git-flow-developer
+            - ipython
+  - databases:
+      layout: main-vertical
+      panes:
+        - postgresql:
+            - pyenv activate slide-git-flow-developer
+            - gvm pkgset use slide-git-flow-developer
+        - shell:
+            - pyenv activate slide-git-flow-developer
+            - gvm pkgset use slide-git-flow-developer
+  - docker:
+      layout: main-vertical
+      panes:
+        - docker:
+            - pyenv activate slide-git-flow-developer
+            - gvm pkgset use slide-git-flow-developer
+        - shell:
+            - pyenv activate slide-git-flow-developer
+            - gvm pkgset use slide-git-flow-developer
+  - tools:
+      layout: main-vertical
+      panes:
+        - watch:
+            - pyenv activate slide-git-flow-developer
+            - gvm pkgset use slide-git-flow-developer
+            - make watch
+        - grip:
+            - pyenv activate slide-git-flow-developer
+            - gvm pkgset use slide-git-flow-developer
+            - make grip
