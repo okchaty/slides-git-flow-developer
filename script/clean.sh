@@ -3,8 +3,6 @@
 
 [ -r "script/bootstrap.sh" ] && source "script/bootstrap.sh"
 
-{
-    rm -rf -- **/**/*__pycache__
-    rm -rf -- **/**/*.pyc
-    rm -rf -- **/**/*.swp
-} >> /dev/null 2>&1
+find $ROOT_DIR/ -name "*.pyc" -delete
+find $ROOT_DIR/ -name "*.swp" -delete
+find $ROOT_DIR/ -name "__pycache__" -delete
