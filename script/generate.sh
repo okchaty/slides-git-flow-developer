@@ -5,4 +5,4 @@
 
 cd ${ROOT_DIR}
 
-landslide main.cfg
+landslide "${ETC_DIR}"/landslide.cfg
