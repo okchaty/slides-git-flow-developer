@@ -11,23 +11,34 @@ WGET = wget
 
 # Bin scripts
 CLEAN = $(shell) $(SCRIPT_DIR)/clean.sh
-SETUP = $(shell) $(SCRIPT_DIR)/setup.sh
+GVM = $(shell) $(SCRIPT_DIR)/gvm.sh
+GRIP = $(shell) $(SCRIPT_DIR)/grip.sh
+PYENV = $(shell) $(SCRIPT_DIR)/pyenv.sh
+INSTALL = $(shell) $(SCRIPT_DIR)/install.sh
+LINTCODE = $(shell) $(SCRIPT_DIR)/lintcode.sh
 TEST = $(shell) $(SCRIPT_DIR)/test.sh
-RUNSERVER = $(shell) $(SCRIPT_DIR)/runserver.sh
 SYNC = $(shell) $(SCRIPT_DIR)/sync.sh
 WATCH = $(shell) $(SCRIPT_DIR)/watch.sh
 GENERATE = $(shell) $(SCRIPT_DIR)/generate.sh
 
 install:
-	$(SETUP)
+	$(INSTALL)
+
+
+roles:
+	$(ROLES_ANSIBLE)
+
+
+ansible_provision:
+	$(ANSIBLE_PROVISION)
+
+
+ansible_deploy:
+	$(ANSIBLE_DEPLOY)
 
 
 clean:
 	$(CLEAN)
-
-
-clean_migrations: clean
-	$(CLEAN_MIGRATIONS)
 
 
 deploy:
@@ -41,13 +52,27 @@ distclean: clean
 	rm -rf $(ROOT_DIR)/demo/*.egg-info
 
 
+environment:
+	$(PYENV)
+	$(GVM)
+	$(INSTALL)
+
+
+generate:
+	$(GENERATE)
+
+
+grip:
+	$(GRIP)
+
+
 maintainer-clean: distclean
 	rm -rf $(BIN_DIR)
 	rm -rf $(ROOT_DIR)/lib/
 
 
-runserver:
-	$(RUNSERVER)
+lintcode:
+	$(LINTCODE)
 
 
 sync:
@@ -58,5 +83,5 @@ watch:
 	$(WATCH)
 
 
-generate:
-	$(GENERATE)
+test:
+	$(TEST)

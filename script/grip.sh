@@ -4,4 +4,4 @@
 # shellcheck source=script/bootstrap.sh
 [ -r "script/bootstrap.sh" ] && source "script/bootstrap.sh"
 
-pip install -r "${REQUIREMENTS_DIR}/dev.txt"
+grip --pass "${GITHUB_API_TOKEN}" ${GRIP_PORT}
