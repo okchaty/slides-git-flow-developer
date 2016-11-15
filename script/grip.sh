@@ -4,4 +4,4 @@
 # shellcheck source=script/bootstrap.sh
 [ -r "script/bootstrap.sh" ] && source "script/bootstrap.sh"
 
-cd "${SOURCE_DIR}" || exit
+grip --pass "${GITHUB_API_TOKEN}" ${GRIP_PORT}

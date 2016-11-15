@@ -4,4 +4,5 @@
 # shellcheck source=script/bootstrap.sh
 [ -r "script/bootstrap.sh" ] && source "script/bootstrap.sh"
 
-cd "${SOURCE_DIR}" || exit
+pre-commit install -f --install-hooks
+pre-commit run --all-files
