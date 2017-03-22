@@ -4,6 +4,10 @@ This file uses change log convention from [Keep a CHANGELOG](http://keepachangel
 
 ## [Unreleased][unreleased]
 
+# [v1.0.4] - 2017-03-21
+
+- [#10](#10)
+
 # [v1.0.3] - 2016-10-20
 
 - [#16](#16)
@@ -25,7 +29,8 @@ This file uses change log convention from [Keep a CHANGELOG](http://keepachangel
 - [#1](#1)
 
 
-[unreleased]: https://github.com/luismayta/slide-git-flow-developer/compare/v1.0.3...HEAD
+[unreleased]: https://github.com/luismayta/slide-git-flow-developer/compare/v1.0.4...HEAD
+[v1.0.4]: https://github.com/luismayta/slide-git-flow-developer/compare/v1.0.3...v1.0.4
 [v1.0.3]: https://github.com/luismayta/slide-git-flow-developer/compare/v1.0.2...v1.0.3
 [v1.0.2]: https://github.com/luismayta/slide-git-flow-developer/compare/v1.0.1...v1.0.2
 [v1.0.1]: https://github.com/luismayta/slide-git-flow-developer/compare/v1.0.0...v1.0.1
