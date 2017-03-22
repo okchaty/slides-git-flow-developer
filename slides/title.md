@@ -2,7 +2,7 @@
 
 ------------------------------------------------------
 
-# Agenda
+## Agenda
 
 - Que es un Flujo de Trabajo.
 - Git Flow.

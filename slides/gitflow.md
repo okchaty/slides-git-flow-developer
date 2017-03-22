@@ -1,4 +1,4 @@
-# Git Flow
+## Git Flow
 
 - es un flujo de trabajo para la práctica de Desarrollo propuesto por Vicente Driessen
 
@@ -7,7 +7,7 @@
 
 ------------------------------------------------------
 
-# Vincent Driessen
+## Vincent Driessen
 
 Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Programacion y Tecnologias (Python, Vim y Git)
 
@@ -17,7 +17,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 
 ------------------------------------------------------
-# Install
+## Install
 
 ## *Linux*
 
@@ -32,7 +32,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 ------------------------------------------------------
 
-# Install OS X And Windows
+## Install OS X And Windows
 
 ### *OS X*
 
@@ -44,7 +44,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 ------------------------------------------------------
 
-# Init
+## Init
 
     !bash
     git flow init
@@ -57,7 +57,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 ------------------------------------------------------
 
-# Feature
+## Feature
 
 - Ramas creadas para hacer nuevos desarrollos.
 
@@ -70,7 +70,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 ------------------------------------------------------
 
-# Commands Feature
+## Commands Feature
 
     !bash
     git flow feature list
@@ -81,7 +81,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 ------------------------------------------------------
 
-# Release
+## Release
 
 - Un Entregable, Finalizado de un sprint.
 
@@ -92,7 +92,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 ------------------------------------------------------
 
-# Commands release
+## Commands release
 
     !bash
     git flow release list
@@ -103,7 +103,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 ------------------------------------------------------
 
-# Hotfix
+## Hotfix
 
 - son caracteristicas no deseadas que se tienen que Corregir inmediatamente.
 
@@ -113,7 +113,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 ------------------------------------------------------
 
-# Commands hotfix
+## Commands hotfix
 
     !bash
     git flow hotfix start
@@ -121,7 +121,7 @@ Ingeniero de Software Interesado en el desarrollo de Web y Herramientas de Progr
 
 ------------------------------------------------------
 
-# Support
+## Support
 
 - note: The support subcommand is still very EXPERIMENTAL!
 - note: DO NOT use it in a production situation.
