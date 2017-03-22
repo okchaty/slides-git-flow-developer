@@ -1,12 +1,9 @@
-<span class="badges">
 [![Build Status](https://travis-ci.org/luismayta/slide-git-flow-developer.svg)](https://travis-ci.org/luismayta/slide-git-flow-developer)
 [![GitHub issues](https://img.shields.io/github/issues/luismayta/slide-git-flow-developer.svg)](https://github.com/luismayta/slide-git-flow-developer)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
-</span>
 
 # Git Flow Developers
 
-This is a talk for the [Pymienta 2015](http://pimientadigital.com) conference.
 You can see the live presentation [here](http://luismayta.github.io/slide-git-flow-developer).
 
 ## Install
@@ -46,8 +43,5 @@ make grip
 [![Linkedin](http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png)][link-linkedin-luismayta]
 [wakatime][link-wakatime-luismayta]
 
-</span>
-
-<!-- links -->
 [link-wakatime-luismayta]: https://wakatime.com/@luismayta
 [link-linkedin-luismayta]: http://pe.linkedin.com/in/luismayta
