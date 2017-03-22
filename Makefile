@@ -1,5 +1,4 @@
-# Makefile for slide-git-flow-developer development.
-# See INSTALL for details.
+# Makefile for slide-git-flow-developer.
 
 # Configuration.
 SHELL = /bin/bash
@@ -7,51 +6,64 @@ ROOT_DIR = $(shell pwd)
 BIN_DIR = $(ROOT_DIR)/bin
 DATA_DIR = $(ROOT_DIR)/var
 SCRIPT_DIR = $(ROOT_DIR)/script
-TEST = $(shell) $(SCRIPT_DIR)/test
+
 WGET = wget
-BUILDOUT_CFG = $(ROOT_DIR)/etc/buildout.cfg
-BUILDOUT_DIR = $(ROOT_DIR)/lib/buildout
-BUILDOUT_VERSION = 2.5.0
-BUILDOUT_BOOTSTRAP_URL = https://raw.github.com/buildout/buildout/$(BUILDOUT_VERSION)/bootstrap/bootstrap.py
-BUILDOUT_BOOTSTRAP = $(BUILDOUT_DIR)/bootstrap.py
-BUILDOUT_BOOTSTRAP_ARGS = -c $(ROOT_DIR)/etc/buildout.cfg buildout:directory=$(ROOT_DIR)
-BUILDOUT = $(BIN_DIR)/buildout
-BUILDOUT_ARGS = -N buildout:directory=$(ROOT_DIR)
-VIRTUALENV_DIR = $(ROOT_DIR)/lib/virtualenv
-# PIP = $(VIRTUALENV_DIR)/bin/pip
-NOSE = nosetests
-# PYTHON = $(VIRTUALENV_DIR)/bin/python
-PYTHON = python
-LANDSLIDE = landslide
-LANDSLIDE_CONFIGURATION = etc/landslide.cfg
-LANDSLIDE_ARGS = $(LANDSLIDE_CONFIGURATION)
+
+# Bin scripts
+CLEAN = $(shell) $(SCRIPT_DIR)/clean.sh
+GVM = $(shell) $(SCRIPT_DIR)/gvm.sh
+GRIP = $(shell) $(SCRIPT_DIR)/grip.sh
+PYENV = $(shell) $(SCRIPT_DIR)/pyenv.sh
+INSTALL = $(shell) $(SCRIPT_DIR)/install.sh
+LINTCODE = $(shell) $(SCRIPT_DIR)/lintcode.sh
+TEST = $(shell) $(SCRIPT_DIR)/test.sh
+SYNC = $(shell) $(SCRIPT_DIR)/sync.sh
+WATCH = $(shell) $(SCRIPT_DIR)/watch.sh
+GENERATE = $(shell) $(SCRIPT_DIR)/generate.sh
+
+install:
+	$(INSTALL)
 
 
-install: py27
-# install: buildout
+roles:
+	$(ROLES_ANSIBLE)
 
 
-py27:
-	pip install -r $(ROOT_DIR)/etc/pyenv.cfg
+ansible_provision:
+	$(ANSIBLE_PROVISION)
 
 
-buildout: py27
-	if [ ! -d $(BUILDOUT_DIR) ]; then mkdir -p $(BUILDOUT_DIR); fi
-	if [ ! -f $(BUILDOUT_BOOTSTRAP) ]; then wget -O $(BUILDOUT_BOOTSTRAP) $(BUILDOUT_BOOTSTRAP_URL); fi
-	chmod +x $(BUILDOUT_BOOTSTRAP)
-	if [ ! -x $(BUILDOUT) ]; then $(PYTHON) $(BUILDOUT_BOOTSTRAP) $(BUILDOUT_BOOTSTRAP_ARGS); fi
-	$(BUILDOUT) -c $(ROOT_DIR)/etc/buildout.cfg $(BUILDOUT_ARGS)
+ansible_deploy:
+	$(ANSIBLE_DEPLOY)
 
 
 clean:
-	find $(ROOT_DIR)/ -name "*.pyc" -delete
+	$(CLEAN)
+
+
+deploy:
+	$(ANSIBLE_PROVISION)
+	$(ANSIBLE_DEPLOY)
 
 
 distclean: clean
-	git clean -xdf
 	rm -rf $(ROOT_DIR)/lib
 	rm -rf $(ROOT_DIR)/*.egg-info
 	rm -rf $(ROOT_DIR)/demo/*.egg-info
+
+
+environment:
+	$(PYENV)
+	$(GVM)
+	$(INSTALL)
+
+
+generate:
+	$(GENERATE)
+
+
+grip:
+	$(GRIP)
 
 
 maintainer-clean: distclean
@@ -59,8 +71,17 @@ maintainer-clean: distclean
 	rm -rf $(ROOT_DIR)/lib/
 
 
-generate:
-	$(LANDSLIDE) $(LANDSLIDE_ARGS)
+lintcode:
+	$(LINTCODE)
+
+
+sync:
+	$(SYNC)
+
+
+watch:
+	$(WATCH)
+
 
 test:
 	$(TEST)
